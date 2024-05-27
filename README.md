@@ -1,5 +1,5 @@
-# magic_book
-Magic Book for Language Agents
+# 🔮‍🔮‍🔮 Welcome to: `magic_book` 🔮‍🔮‍🔮
+Code for a Magic Book Enabling Language Agents to Build Their Own Brains
 
 
 System Overview
