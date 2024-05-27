@@ -109,22 +109,7 @@ Magic Book Request:
 - handle_content calls show_magic_book.
 - show_magic_book returns a hierarchical view of available files.
 
-## Example Usage
 
-Writing a File:
-
-```plaintext
-📝‍🔒‍💾📝‍🔒‍🔍‍💾{"name": "example_file", "path": "example_path", "id": "A1", "classifications": [{"category": "example_category", "class": "example_class"}]}📝‍🔒‍🔍‍💾This is a sample text file content.📝‍🔒‍💾```
-
-Retrieving Metadata:
-
-```plaintext
-📝‍🔒‍🔍‍🔍 1 metadata```
-
-Magic Book Request:
-
-```plaintext
-🔮‍🔮‍🔮```
 
 ## Integration with Language AIs
 The AI processes messages containing specific emoji sequences and triggers the corresponding actions:
@@ -135,3 +120,22 @@ The AI processes messages containing specific emoji sequences and triggers the c
 
 This system leverages the AI's ability to process content dynamically and manage files and metadata efficiently,
 providing a powerful tool for organizing and retrieving information based on user-defined criteria and hierarchical categorization.
+
+
+
+## Example Usage
+
+**Writing a File:**
+
+```plaintext
+📝‍🔒‍💾📝‍🔒‍🔍‍💾{"name": "example_file", "path": "example_path", "id": "A1", "classifications": [{"category": "example_category", "class": "example_class"}]}📝‍🔒‍🔍‍💾This is a sample text file content.📝‍🔒‍💾```
+
+**Retrieving Metadata:**
+
+```plaintext
+📝‍🔒‍🔍‍🔍 1 metadata```
+
+**Magic Book Request:**
+
+```plaintext
+🔮‍🔮‍🔮```
