@@ -127,12 +127,12 @@ providing a powerful tool for organizing and retrieving information based on use
 
 **Writing a File:**
 
-```plaintext """📝‍🔒‍💾📝‍🔒‍🔍‍💾{"name": "example_file", "path": "example_path", "id": "A1", "classifications": [{"category": "example_category", "class": "example_class"}]}📝‍🔒‍🔍‍💾This is a sample text file content.📝‍🔒‍💾"""```
+```"""📝‍🔒‍💾📝‍🔒‍🔍‍💾{"name": "example_file", "path": "example_path", "id": "A1", "classifications": [{"category": "example_category", "class": "example_class"}]}📝‍🔒‍🔍‍💾This is a sample text file content.📝‍🔒‍💾"""```
 
 **Retrieving Metadata:**
 
-```plaintext """📝‍🔒‍🔍‍🔍 1 metadata"""```
+```"""📝‍🔒‍🔍‍🔍 1 metadata"""```
 
 **Magic Book Request:**
 
-```plaintext """🔮‍🔮‍🔮"""```
+```"""🔮‍🔮‍🔮"""```
