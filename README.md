@@ -29,17 +29,15 @@ The system is designed to handle content and metadata dynamically using emoji se
 
 - Metadata Management: Metadata includes hierarchical categories and unique IDs using A1 notation.
 
-- Integration with Chat AI: The AI can process messages containing specific emoji sequences to trigger 
-    different actions such as writing files, retrieving metadata, or invoking the "magic book."
+- Integration with Chat AI: The AI can process messages containing specific emoji sequences to trigger different actions such as writing files, retrieving metadata, or invoking the "magic book."
 
 #### Components
 
 #### magic_book.py: 
-This module contains functions for detecting file types, handling content, writing files, 
-    managing metadata, and providing hierarchical views of available files.
+- This module contains functions for detecting file types, handling content, writing files, managing metadata, and providing hierarchical views of available files.
 
 #### main.py:
-This is some module you make that integrates the chat AI with the functionalities provided by magic_book.py.
+- This is some module you make that integrates the chat AI with the functionalities provided by magic_book.py.
 
 ## How It Works
 
@@ -48,41 +46,42 @@ This is some module you make that integrates the chat AI with the functionalitie
 Emoji Whitelist: Defines the mapping between emoji sequences and file types or actions.
 
 detect_file_type(content):
-Uses regex to find emoji sequences in the content.
-Returns the corresponding file type or action.
+- Uses regex to find emoji sequences in the content.
+- Returns the corresponding file type or action.
 
 handle_content(content, file_type_cipher):
-Detects the emoji sequence in the content.
-Determines the action based on the file type.
-Calls the appropriate function (write_file, retrieve_metadata, write_metadata, or show_magic_book).
+- Detects the emoji sequence in the content.
+- Determines the action based on the file type.
+- Calls the appropriate function (write_file, retrieve_metadata, write_metadata, or show_magic_book).
 
 write_file(content, file_type):
-Extracts metadata and file content.
-Uses metadata to determine the file name, storage path, and classifications.
-Ensures the storage path exists.
-Writes the metadata and content to files.
+- Extracts metadata and file content.
+- Uses metadata to determine the file name, storage path, and classifications.
+- Ensures the storage path exists.
+- Writes the metadata and content to files.
 
 write_metadata(content):
-Extracts and processes metadata.
-Stores metadata in the specified path.
-Uses A1 notation for unique IDs.
+- Extracts and processes metadata.
+- Stores metadata in the specified path.
+- Uses A1 notation for unique IDs.
 
 retrieve_metadata(content):
-Extracts the file ID from the content.
-Retrieves and returns the metadata for the specified file.
+- Extracts the file ID from the content.
+- Retrieves and returns the metadata for the specified file.
 
 show_magic_book(file_type_cipher):
-Lists all files in the current directory and subdirectories.
-Groups files by type and prepares a message with the hierarchical view.
-main.py
+- Lists all files in the current directory and subdirectories.
+- Groups files by type and prepares a message with the hierarchical view.
+
+#### main.py
 
 send_message(client, messages, default_system_message, file_type_cipher, ...):
-Sends a message to the AI and processes the response.
-Calls detect_choices to handle content based on emoji sequences.
+- Sends a message to the AI and processes the response.
+- Calls detect_choices to handle content based on emoji sequences.
 
 detect_choices(content, file_type_cipher):
-Uses detect_file_type to find the emoji sequence.
-Calls handle_content to process the content and trigger appropriate actions.
+- Uses detect_file_type to find the emoji sequence.
+- Calls handle_content to process the content and trigger appropriate actions.
 
 ## Workflow
 
@@ -130,9 +129,9 @@ Magic Book Request:
 ## Integration with Language AIs
 The AI processes messages containing specific emoji sequences and triggers the corresponding actions:
 
-File Writing: Handles writing files dynamically based on metadata.
-Metadata Management: Retrieves and stores metadata.
-Magic Book: Provides an overview of available files in a hierarchical format.
+- File Writing: Handles writing files dynamically based on metadata.
+- Metadata Management: Retrieves and stores metadata.
+- Magic Book: Provides an overview of available files in a hierarchical format.
 
 This system leverages the AI's ability to process content dynamically and manage files and metadata efficiently,
-    providing a powerful tool for organizing and retrieving information based on user-defined criteria and hierarchical categorization.
+providing a powerful tool for organizing and retrieving information based on user-defined criteria and hierarchical categorization.
