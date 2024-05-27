@@ -1,8 +1,8 @@
 # 🔮‍🔮‍🔮 Welcome to: `magic_book` 🔮‍🔮‍🔮
-#### Code for a Magic Book Enabling Language Agents to Build Their Own Brains
+## Code for a Magic Book Enabling Language Agents to Build Their Own Brains
 
 
-System Overview
+## System Overview
 
 The system is designed to handle content and metadata dynamically using emoji sequences and hierarchical organization. It allows for:
 
@@ -11,15 +11,16 @@ Metadata Management: Metadata includes hierarchical categories and unique IDs us
 Integration with Chat AI: The AI can process messages containing specific emoji sequences to trigger 
     different actions such as writing files, retrieving metadata, or invoking the "magic book."
 
-Components
+#### Components
 
-magic_book.py: This module contains functions for detecting file types, handling content, writing files, 
+#### magic_book.py: 
+This module contains functions for detecting file types, handling content, writing files, 
     managing metadata, and providing hierarchical views of available files.
 main.py: This module integrates the chat AI with the functionalities provided by magic_book.py.
 
-How It Works
+## How It Works
 
-magic_book.py
+#### magic_book.py
 
 Emoji Whitelist: Defines the mapping between emoji sequences and file types or actions.
 
@@ -60,7 +61,7 @@ detect_choices(content, file_type_cipher):
 Uses detect_file_type to find the emoji sequence.
 Calls handle_content to process the content and trigger appropriate actions.
 
-Workflow
+## Workflow
 
 Sending a Message:
 
@@ -86,7 +87,7 @@ The content includes an emoji sequence for the magic book.
 handle_content calls show_magic_book.
 show_magic_book returns a hierarchical view of available files.
 
-Example Usage
+## Example Usage
 
 Writing a File:
 
@@ -103,7 +104,7 @@ Magic Book Request:
 ```plaintext
 🔮‍🔮‍🔮```
 
-Integration with Chat AI
+## Integration with Language AIs
 The AI processes messages containing specific emoji sequences and triggers the corresponding actions:
 
 File Writing: Handles writing files dynamically based on metadata.
