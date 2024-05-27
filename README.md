@@ -8,12 +8,12 @@
 #### READ THIS
 
 #### 🤯🌀 This code enables dynamic autonomous capabilities that can become complex to manage. 🌀🤯
-- This code handles dynamic file writing, metadata management, and hierarchical organization based on user-defined criteria. It involves:
+This code handles dynamic file writing, metadata management, and hierarchical organization based on user-defined criteria. It involves:
 
--- Dynamic naming and storage of files based on metadata
--- Use of emoji sequences to trigger specific actions
--- Unique ID system using A1 notation for file identification
--- Hierarchical organization of files by categories and classes
+- Dynamic naming and storage of files based on metadata
+- Use of emoji sequences to trigger specific actions
+- Unique ID system using A1 notation for file identification
+- Hierarchical organization of files by categories and classes
 
 **Please use with caution.** 
 Ensure proper validation and security measures are in place to prevent potential vulnerabilities and misuse.
