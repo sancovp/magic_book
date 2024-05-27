@@ -8,11 +8,13 @@ The system is designed to handle content and metadata dynamically using emoji se
 
 Dynamic File Naming and Organization: Files are named, stored, and categorized based on metadata.
 Metadata Management: Metadata includes hierarchical categories and unique IDs using A1 notation.
-Integration with Chat AI: The AI can process messages containing specific emoji sequences to trigger different actions such as writing files, retrieving metadata, or invoking the "magic book."
+Integration with Chat AI: The AI can process messages containing specific emoji sequences to trigger 
+    different actions such as writing files, retrieving metadata, or invoking the "magic book."
 
 Components
 
-magic_book.py: This module contains functions for detecting file types, handling content, writing files, managing metadata, and providing hierarchical views of available files.
+magic_book.py: This module contains functions for detecting file types, handling content, writing files, 
+    managing metadata, and providing hierarchical views of available files.
 main.py: This module integrates the chat AI with the functionalities provided by magic_book.py.
 
 How It Works
@@ -108,4 +110,5 @@ File Writing: Handles writing files dynamically based on metadata.
 Metadata Management: Retrieves and stores metadata.
 Magic Book: Provides an overview of available files in a hierarchical format.
 
-This system leverages the AI's ability to process content dynamically and manage files and metadata efficiently, providing a powerful tool for organizing and retrieving information based on user-defined criteria and hierarchical categorization.
+This system leverages the AI's ability to process content dynamically and manage files and metadata efficiently,
+    providing a powerful tool for organizing and retrieving information based on user-defined criteria and hierarchical categorization.
